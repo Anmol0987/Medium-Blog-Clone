@@ -4,12 +4,14 @@ import {SignIn} from './pages/Signin.tsx'
 import {Blog} from './pages/Blog.tsx'
 import { Blogs } from "./pages/Blogs.tsx"
 import { Publish } from "./pages/Publish.tsx"
+import { Landing } from "./pages/Landing.tsx"
 
 const App = () => {
   return (
     <>
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Landing />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/blog/:id" element={<Blog />} />
